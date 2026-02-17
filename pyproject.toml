@@ -1,0 +1,45 @@
+[project]
+name = "calculator-lib"
+version = "0.1.0"
+description = "A python calculator library."
+authors = [
+    {name = "Rubens Gomes",email = "rubens.s.gomes@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+]
+
+[project.urls]
+Homepage = "https://github.com/rubensgomes/calculator-lib/"
+Documentation = "https://github.com/rubensgomes/calculator-lib/README.md"
+Repository = "https://github.com/rubensgomes/calculator-lib/"
+
+[tool.poetry]
+packages = [{include = "calculator_lib", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+source = ["calculator_lib"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.2,<10.0.0)",
+    "httpx (>=0.28.0,<1.0.0)",
+    "black (>=26.1.0,<27.0.0)",
+    "pylint (>=4.0.4,<5.0.0)",
+    "coverage (>=7.13.4,<8.0.0)",
+    "pytest-cov (>=7.0.0,<8.0.0)",
+    "uvicorn[standard] (>=0.40.0,<0.41.0)",
+    "isort (>=7.0.0,<8.0.0)",
+    "mypy (>=1.19.1,<2.0.0)",
+    "types-pyyaml (>=6.0.12.20250915,<7.0.0.0)",
+]
