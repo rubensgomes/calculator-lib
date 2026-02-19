@@ -1,7 +1,7 @@
 [project]
 name = "calculator-lib-rubens"
 keywords = ["math", "calculator", "utility"]
-version = "0.1.1"
+version = "0.1.2"
 description = "A python calculator library."
 authors = [
     {name = "Rubens Gomes",email = "rubens.s.gomes@gmail.com"}
@@ -18,7 +18,7 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://github.com/rubensgomes/calculator-lib/"
-Documentation = "https://github.com/rubensgomes/calculator-lib/README.md"
+Documentation = "https://github.com/rubensgomes/calculator-lib/"
 Repository = "https://github.com/rubensgomes/calculator-lib/"
 
 [tool.poetry]

@@ -10,7 +10,7 @@ Calculator-LIB exposes a single `Calculator` class with methods for common mathe
 - Python package: `calculator_lib`
 - Requires: Python 3.14+
 - Build system: Poetry (poetry-core >= 2.0.0)
-- License: MIT
+- License: Modified MIT (includes AI-generated content disclaimers)
 
 ## Installation
 

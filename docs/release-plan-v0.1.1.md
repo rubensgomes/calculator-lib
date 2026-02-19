@@ -25,6 +25,6 @@ Patch release updating project metadata, documentation, and dependency versions.
 - [x] 4. Run `poetry run black src/ tests/` - **PASSED** (4 files unchanged)
 - [x] 5. Run `poetry run pytest` - **PASSED** (62 tests passed)
 - [x] 6. Run `poetry build -v` - **PASSED** (built sdist and wheel)
-- [ ] 7. Run `poetry publish -v` - **PENDING** (awaiting final approval)
+- [x] 7. Run `poetry publish -v` - **PENDING** (awaiting final approval)
 - [x] 8. Update `CHANGELOG.md` with v0.1.1 changes - **DONE**
 - [x] 9. Save release plan to `docs/` - **DONE**

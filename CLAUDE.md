@@ -48,7 +48,8 @@ tests/
 scripts/
   test_github.sh     # GitHub connectivity test script
 docs/
-  release-plan-v0.1.0.md  # Release plan documentation
+  release-plan-v0.1.0.md  # Release plan for v0.1.0
+  release-plan-v0.1.1.md  # Release plan for v0.1.1
 ```
 
 ## Code Conventions

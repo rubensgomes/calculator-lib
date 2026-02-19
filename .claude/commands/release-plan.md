@@ -10,7 +10,7 @@ argument-hint: Git repository name (e.g., rubensgomes/calculator-lib)
 2. If the argument is provided, check if the $ARGUMENT repository exists.
 3. MUST run `scripts/test_github.sh $ARGUMENT`, and ensure it succeeds;
    otherwise, it MUST report error and stop.
-4. Now, you MUST create a release plan containing following steps:
+4. Now, you MUST create a NEW release plan containing following steps:
    - MUST run `poetry run mypy src/` and fix any issues.
    - MUST run `poetry run isort src/ tests/` and fix any issues. 
    - MUST run `poetry run black src/ tests/` and fix any issues. 

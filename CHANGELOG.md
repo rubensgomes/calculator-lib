@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-02-18
+
+### Changed
+
+- Improved `README.md` with PyPI/license badges, API reference tables, categorized usage examples, and error handling section
+- Updated `CLAUDE.md` to include v0.1.1 release plan in project structure
+- Updated `.claude/commands/release-plan.md` to create NEW release plans per release
+- Updated `llms.txt` with minor formatting fixes
+
 ## [0.1.1] - 2026-02-18
 
 ### Changed
