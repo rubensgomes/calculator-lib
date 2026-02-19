@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-02-18
+
+### Changed
+
+- Renamed distribution from `calculator-lib` to `calculator-lib-rubens` for PyPI uniqueness
+- Updated `pyproject.toml` with keywords, MIT license classifier, and bumped uvicorn dependency
+- Updated `README.md` with correct distribution name, fixed license reference, and improved commands section
+- Updated `CLAUDE.md` with distribution name, repository link, expanded project structure, and release process section
+- Updated `llms.txt` with correct distribution name, installation instructions, categorized API sections, and error handling examples
+- Updated `poetry.lock` with latest dependency versions
+
 ## [0.1.0] - 2026-02-16
 
 ### Added

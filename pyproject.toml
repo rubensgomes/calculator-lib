@@ -1,12 +1,18 @@
 [project]
-name = "calculator-lib"
-version = "0.1.0"
+name = "calculator-lib-rubens"
+keywords = ["math", "calculator", "utility"]
+version = "0.1.1"
 description = "A python calculator library."
 authors = [
     {name = "Rubens Gomes",email = "rubens.s.gomes@gmail.com"}
 ]
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.14"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
 dependencies = [
 ]
 
@@ -38,7 +44,7 @@ dev = [
     "pylint (>=4.0.4,<5.0.0)",
     "coverage (>=7.13.4,<8.0.0)",
     "pytest-cov (>=7.0.0,<8.0.0)",
-    "uvicorn[standard] (>=0.40.0,<0.41.0)",
+    "uvicorn[standard] (>=1.0.3,<2.0.0)",
     "isort (>=7.0.0,<8.0.0)",
     "mypy (>=1.19.1,<2.0.0)",
     "types-pyyaml (>=6.0.12.20250915,<7.0.0.0)",

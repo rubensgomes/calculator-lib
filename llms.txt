@@ -6,28 +6,44 @@
 
 Calculator-LIB exposes a single `Calculator` class with methods for common mathematical operations. All methods are stateless, accept `float` arguments, return `float` results, and raise `ValueError` for invalid inputs (e.g., division by zero, square root of a negative number).
 
-- Distribution name: `calculator-lib`
+- Distribution name: `calculator-lib-rubens`
 - Python package: `calculator_lib`
 - Requires: Python 3.14+
-- Build system: Poetry
+- Build system: Poetry (poetry-core >= 2.0.0)
+- License: MIT
+
+## Installation
+
+```bash
+pip install calculator-lib-rubens
+```
 
 ## API
 
 The `Calculator` class provides the following methods:
 
+### Core Arithmetic
 - `add(a, b)` - Addition
 - `subtract(a, b)` - Subtraction
 - `multiply(a, b)` - Multiplication
 - `divide(a, b)` - Division (raises ValueError if b is zero)
+
+### Power & Roots
 - `power(a, b)` - Exponentiation (a raised to the power b)
 - `sqrt(a)` - Square root (raises ValueError if a is negative)
 - `nth_root(a, n)` - N-th root (raises ValueError if n is zero or even root of negative)
+
+### Modulo & Integer Math
 - `modulo(a, b)` - Remainder (raises ValueError if b is zero)
 - `floor_divide(a, b)` - Floor division (raises ValueError if b is zero)
+
+### Absolute & Rounding
 - `absolute(a)` - Absolute value
 - `round_number(a, decimals=0)` - Rounding to decimal places
 - `floor(a)` - Floor (largest integer <= a)
 - `ceil(a)` - Ceiling (smallest integer >= a)
+
+### Logarithmic & Exponential
 - `log10(a)` - Base-10 logarithm (raises ValueError if a <= 0)
 - `ln(a)` - Natural logarithm (raises ValueError if a <= 0)
 - `exp(a)` - Exponential (e raised to the power a)
@@ -44,7 +60,17 @@ calc.sqrt(16)        # 4.0
 calc.log10(100)      # 2.0
 ```
 
+## Error Handling
+
+Invalid inputs raise `ValueError` with descriptive messages:
+
+```python
+calc.divide(10, 0)   # ValueError: Cannot divide by zero
+calc.sqrt(-1)        # ValueError: Cannot take square root of a negative number
+calc.log10(0)        # ValueError: Cannot take logarithm of a non-positive number
+```
+
 ## Links
 
 - [Repository](https://github.com/rubensgomes/calculator-lib/)
-- [README](https://github.com/rubensgomes/calculator-lib/README.md)
+- [README](https://github.com/rubensgomes/calculator-lib/blob/main/README.md)

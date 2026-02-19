@@ -4,10 +4,13 @@
 
 **calculator-lib** is a Python calculator library that provides stateless arithmetic, power/root, modulo, rounding, and logarithmic/exponential operations via the `Calculator` class.
 
+- **Distribution name:** `calculator-lib-rubens` (on PyPI)
+- **Python package:** `calculator_lib` (imported as `from calculator_lib import Calculator`)
 - **Language:** Python >= 3.14
 - **Build/Package Manager:** Poetry (poetry-core >= 2.0.0)
 - **Source layout:** `src/calculator_lib/`
 - **Tests:** `tests/`
+- **Repository:** [rubensgomes/calculator-lib](https://github.com/rubensgomes/calculator-lib/)
 
 ## Common Commands
 
@@ -42,6 +45,10 @@ src/calculator_lib/
   calculator.py      # Core Calculator class with all operations
 tests/
   test_calculator.py # Tests for all Calculator methods
+scripts/
+  test_github.sh     # GitHub connectivity test script
+docs/
+  release-plan-v0.1.0.md  # Release plan documentation
 ```
 
 ## Code Conventions
@@ -49,7 +56,12 @@ tests/
 - **Formatter:** Black (default settings)
 - **Import sorting:** isort
 - **Type checking:** mypy (strict on src/)
+- **Linting:** pylint
 - **Test framework:** pytest with fixtures
 - **Coverage:** >= 90% required (`fail_under = 90` in pyproject.toml)
 - All `Calculator` methods are stateless, accept `float` args, return `float`, and raise `ValueError` for invalid inputs
 - Logging via `logging.getLogger(__name__)` for debug/warning messages
+
+## Release Process
+
+See [RELEASE.md](RELEASE.md) for the full release process. Releases are managed via Claude Code using the `/release-plan` custom slash command.

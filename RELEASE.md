@@ -63,6 +63,22 @@ that a `Claude Code` CLI session is started running on an underlying Linux
 
     # Run tests with coverage report
     poetry run python -m coverage run -m pytest tests/
+  
+    # Build and package project into distributable formats: `sdist` and `wheel`
+    export SOURCE_DATE_EPOCH=$(date +%s); poetry build -vvv
+
+    # configure poetry to publish to TestPyPi:
+    poetry config repositories.testpypi https://test.pypi.org/legacy/
+    poetry config -vvv pypi-token.testpypi "${TESTPYPI_API_TOKEN}"
+
+    # configure poetry to publish to PyPi:
+    poetry config -vvv pypi-token.pypi "${PYPI_API_TOKEN}"
+
+    # publish package to TestPyPi:
+    poetry publish -vvv -r testpypi --build
+
+    # publish package to PyPi:
+    poetry publish -vvv --build
     ```
 
 ## Generating a release plan
@@ -73,7 +89,7 @@ start `Claude Code`, and run the following custom slash command:
 - Test connectivity to this project remote Git repo:
 
    ```bash
-   scripts/test_github_connectivity.sh rubensgomes/calculator-lib
+   scripts/test_github.sh rubensgomes/calculator-lib
    ```
 
 - Claude code custom slash command:

@@ -2,7 +2,7 @@
 
 A Python calculator library providing stateless arithmetic, power/root, modulo, rounding, and logarithmic/exponential operations.
 
-- **Distribution name**: `calculator-lib`
+- **Distribution name**: `calculator-lib-rubens`
 - **Python package**: `calculator_lib` (imported as `from calculator_lib import Calculator`)
 - **Repository**: [rubensgomes/calculator-lib](https://github.com/rubensgomes/calculator-lib/)
 
@@ -54,26 +54,37 @@ calc.sqrt(-1)           # ValueError: Cannot take square root of a negative numb
 calc.log10(0)           # ValueError: Cannot take logarithm of a non-positive number
 ```
 
-## Development
+## Common Poetry Commands
 
 ```bash
+# Update the dependencies found in `pyproject.toml`
+poetry update --verbose
+
+# Install the project dependencies
+poetry install --verbose
+
+# Activate Poetry-managed virtual environment in your current shell
+eval "$(poetry env activate)"
+
+# Sort and group import statements
+poetry run isort src/ tests/
+
+# Format your Python code
+poetry run black src/ tests/
+
+# Run static type checker on Python `src/` folder
+poetry run mypy src/
+
+# Lint
+poetry run pylint src/
+
 # Run tests
 poetry run pytest
 
 # Run tests with coverage
 poetry run pytest --cov
-
-# Formatting
-poetry run black src/ tests/
-poetry run isort src/ tests/
-
-# Type checking
-poetry run mypy src/
-
-# Linting
-poetry run pylint src/
 ```
 
 ## License
 
-[Apache-2.0](LICENSE)
+[Modified MIT](LICENSE)
