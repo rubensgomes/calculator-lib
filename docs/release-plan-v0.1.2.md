@@ -25,5 +25,5 @@ Patch release with improved documentation: enhanced README with badges, API refe
 - [x] 5. Run `poetry run pytest` and fix any issues - **PASSED** (62 tests passed)
 - [x] 6. Run `export SOURCE_DATE_EPOCH=$(date +%s); poetry build -v` and fix any issues - **PASSED** (built sdist and wheel for 0.1.2)
 - [x] 7. Ensure `CHANGELOG.md` exists and update with v0.1.2 changes - **DONE**
-- [ ] 8. Commit all changes, create tag v0.1.2, push, and create GitHub release
-- [ ] 9. Run `poetry publish -v` (LAST step)
+- [x] 8. Commit all changes, create tag v0.1.2, push, and create GitHub release - **DONE**
+- [x] 9. Run `poetry publish -v` (LAST step) - **DONE** (published to PyPI)
