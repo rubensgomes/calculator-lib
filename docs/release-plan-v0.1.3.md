@@ -22,5 +22,5 @@
 - [x] **Step 5:** Run `export SOURCE_DATE_EPOCH=$(date +%s); poetry build -v` — build package ✅
 - [x] **Step 6:** Ensure `CHANGELOG.md` exists and update it with v0.1.3 changes ✅
 - [x] **Step 7:** Bump version to 0.1.3 in `pyproject.toml` ✅
-- [ ] **Step 8:** Commit all changes, create `v0.1.3` tag, push to remote, create GitHub release
-- [ ] **Step 9:** Run `poetry publish -v` — publish to PyPI
+- [x] **Step 8:** Commit all changes, create `v0.1.3` tag, push to remote, create GitHub release ✅
+- [x] **Step 9:** Run `poetry publish -v` — publish to PyPI ✅
