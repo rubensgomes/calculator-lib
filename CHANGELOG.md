@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-02-20
+
+### Changed
+
+- Expanded `.gitignore` with comprehensive ignore rules (Claude Code, Jupyter, AI/ML artifacts, secrets, OS files)
+- Fixed minor typos in `LICENSE` (missing period, capitalized "Limitation of Liability")
+- Simplified and updated `RELEASE.md` (removed outdated steps, corrected script references)
+- Updated `poetry.lock` with latest dependency versions
+- Cleaned up `pyproject.toml`
+
+### Added
+
+- New `SETUP.md` documentation file with project setup instructions
+
 ## [0.1.2] - 2026-02-18
 
 ### Changed
