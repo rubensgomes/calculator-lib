@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-02-23
+
+### Changed
+
+- Lowered minimum Python version requirement from `>=3.14` to `>=3.10.0` for broader compatibility
+- Updated `poetry.lock` with latest dependency versions
+
 ## [0.1.3] - 2026-02-20
 
 ### Changed

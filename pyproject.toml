@@ -1,14 +1,14 @@
 [project]
 name = "calculator-lib-rubens"
 keywords = ["math", "calculator", "utility"]
-version = "0.1.3"
+version = "0.1.4"
 description = "A python calculator library."
 authors = [
     {name = "Rubens Gomes",email = "rubens.s.gomes@gmail.com"}
 ]
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.14"
+requires-python = ">=3.10.0"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License"
