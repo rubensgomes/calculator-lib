@@ -18,5 +18,5 @@
 - [x] Run `poetry run pytest` and fix any issues
 - [x] Run `export SOURCE_DATE_EPOCH=$(date +%s); poetry build -v` and fix any issues
 - [x] Ensure `CHANGELOG.md` exists and update with v0.1.4 changes
-- [ ] Commit all changes to main, create tag v0.1.4, push, and create GitHub release
-- [ ] Run `poetry publish -v` to publish to PyPI
+- [x] Commit all changes to main, create tag v0.1.4, push, and create GitHub release
+- [x] Run `poetry publish -v` to publish to PyPI
