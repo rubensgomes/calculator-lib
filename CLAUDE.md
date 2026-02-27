@@ -54,6 +54,7 @@ docs/
 
 ## Code Conventions
 
+- **Style guide:** [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
 - **Formatter:** Black (default settings)
 - **Import sorting:** isort
 - **Type checking:** mypy (strict on src/)

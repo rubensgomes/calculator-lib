@@ -1,7 +1,7 @@
 [project]
 name = "calculator-lib-rubens"
 keywords = ["math", "calculator", "utility"]
-version = "0.1.4"
+version = "0.1.5"
 description = "A python calculator library."
 authors = [
     {name = "Rubens Gomes",email = "rubens.s.gomes@gmail.com"}

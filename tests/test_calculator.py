@@ -1,3 +1,5 @@
+"""Tests for the Calculator class."""
+
 import math
 
 import pytest
@@ -7,6 +9,7 @@ from calculator_lib import Calculator
 
 @pytest.fixture
 def calc():
+    """Creates a Calculator instance for use in tests."""
     return Calculator()
 
 
@@ -50,6 +53,8 @@ class TestMultiply:
 
 
 class TestDivide:
+    """Tests for Calculator.divide."""
+
     def test_even_division(self, calc):
         assert calc.divide(10, 2) == 5
 
@@ -79,6 +84,8 @@ class TestPower:
 
 
 class TestModulo:
+    """Tests for Calculator.modulo."""
+
     def test_positive_numbers(self, calc):
         assert calc.modulo(10, 3) == 1
 
@@ -94,6 +101,8 @@ class TestModulo:
 
 
 class TestSqrt:
+    """Tests for Calculator.sqrt."""
+
     def test_perfect_square(self, calc):
         assert calc.sqrt(16) == 4.0
 
@@ -111,6 +120,8 @@ class TestSqrt:
 
 
 class TestLog10:
+    """Tests for Calculator.log10."""
+
     def test_ten(self, calc):
         assert calc.log10(10) == 1.0
 
@@ -134,6 +145,8 @@ class TestLog10:
 
 
 class TestLn:
+    """Tests for Calculator.ln."""
+
     def test_e(self, calc):
         assert calc.ln(math.e) == pytest.approx(1.0)
 
@@ -154,6 +167,8 @@ class TestLn:
 
 
 class TestExp:
+    """Tests for Calculator.exp."""
+
     def test_zero(self, calc):
         assert calc.exp(0) == 1.0
 
@@ -165,6 +180,8 @@ class TestExp:
 
 
 class TestNthRoot:
+    """Tests for Calculator.nth_root."""
+
     def test_cube_root(self, calc):
         assert calc.nth_root(27, 3) == pytest.approx(3.0)
 
@@ -186,6 +203,8 @@ class TestNthRoot:
 
 
 class TestFloorDivide:
+    """Tests for Calculator.floor_divide."""
+
     def test_even_division(self, calc):
         assert calc.floor_divide(10, 2) == 5
 

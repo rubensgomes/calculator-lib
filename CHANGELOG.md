@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.5] - 2026-02-26
+
+### Changed
+
+- Adopted the Google Python Style Guide as the project coding standard
+- Converted all docstrings from RST markup to Google-style plain text
+- Added missing module and class docstrings for full pylint compliance
+- Updated `.pylintrc` to disable `redefined-outer-name` (standard pytest fixture pattern)
+- Updated `CLAUDE.md` to document the Google Python Style Guide convention
+
 ## [0.1.4] - 2026-02-23
 
 ### Changed
