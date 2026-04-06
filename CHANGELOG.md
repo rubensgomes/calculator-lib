@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.6] - 2026-04-05
+
+### Changed
+
+- Updated `requires-python` from `>=3.10.0` to `>=3.12.0,<4.0.0`
+- Added `[tool.black]`, `[tool.isort]`, `[tool.mypy]`, `[tool.pytest.ini_options]` configurations to `pyproject.toml`
+- Added `[tool.poe.tasks]` clean tasks to `pyproject.toml`
+- Updated dev dependency versions (`black`, `coverage`, `pytest-cov`) and added `pytest-asyncio`
+- Sorted dev dependencies alphabetically in `pyproject.toml`
+- Updated `CLAUDE.md` to reflect Python >= 3.12, Black line-length 80, and consolidated docs listing
+- Updated `README.md` badges and requirements to Python 3.12+
+- Updated `.claude/commands/release-plan.md` to include documentation update step
+
 ## [0.1.5] - 2026-02-26
 
 ### Changed

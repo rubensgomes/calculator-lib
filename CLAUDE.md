@@ -6,7 +6,7 @@
 
 - **Distribution name:** `calculator-lib-rubens` (on PyPI)
 - **Python package:** `calculator_lib` (imported as `from calculator_lib import Calculator`)
-- **Language:** Python >= 3.14
+- **Language:** Python >= 3.12
 - **Build/Package Manager:** Poetry (poetry-core >= 2.0.0)
 - **Source layout:** `src/calculator_lib/`
 - **Tests:** `tests/`
@@ -48,14 +48,13 @@ tests/
 scripts/
   test_github.sh     # GitHub connectivity test script
 docs/
-  release-plan-v0.1.0.md  # Release plan for v0.1.0
-  release-plan-v0.1.1.md  # Release plan for v0.1.1
+  release-plan-v*.md  # Release plans for each version
 ```
 
 ## Code Conventions
 
 - **Style guide:** [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
-- **Formatter:** Black (default settings)
+- **Formatter:** Black (line-length 80)
 - **Import sorting:** isort
 - **Type checking:** mypy (strict on src/)
 - **Linting:** pylint

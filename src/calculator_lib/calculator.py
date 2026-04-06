@@ -67,7 +67,9 @@ class Calculator:
             ValueError: If a is negative.
         """
         if a < 0:
-            logger.warning("Square root of negative number attempted: sqrt(%s)", a)
+            logger.warning(
+                "Square root of negative number attempted: sqrt(%s)", a
+            )
             raise ValueError("Cannot take square root of a negative number")
         result = a**0.5
         logger.debug("sqrt(%s) = %s", a, result)

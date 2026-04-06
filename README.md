@@ -3,7 +3,7 @@
 A Python calculator library providing stateless arithmetic, power/root, modulo,
 rounding, and logarithmic/exponential operations.
 
-[![Python 3.14+](https://img.shields.io/badge/python-3.14%2B-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Installation
@@ -109,7 +109,7 @@ calc.modulo(10, 0)  # ValueError: Cannot modulo by zero
 
 ## Requirements
 
-- Python 3.14+
+- Python 3.12+
 
 ## License
 
