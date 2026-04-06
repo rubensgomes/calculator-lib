@@ -27,5 +27,5 @@
 - [x] 4. Run `poetry run pytest` and fix any issues
 - [x] 5. Run `export SOURCE_DATE_EPOCH=$(date +%s); poetry build -v` and fix any issues
 - [x] 6. Ensure `CHANGELOG.md` exists and update with current release changes
-- [ ] 7. Commit all changes, create version tag, push, and create GitHub release
-- [ ] 8. Run `poetry publish -v` to publish to PyPI
+- [x] 7. Commit all changes, create version tag, push, and create GitHub release
+- [x] 8. Run `poetry publish -v` to publish to PyPI
