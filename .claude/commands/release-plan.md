@@ -23,6 +23,5 @@ argument-hint: Git repository name (e.g., rubensgomes/calculator-lib)
    - MUST commit all changes to main, create a new version tag, push, and create a GitHub release
    - MUST run `poetry publish -v` as the VERY LAST step in the release
 6. MUST save the release plan in the project's docs folder 
-7. MUST mark off checkboxes as steps in the plan are completed 
-8. MUST get user's approval for each release step being executed 
-9. Upon completion of release plan, request user's approval
+7. MUST mark off checkboxes as steps in the plan are completed
+
