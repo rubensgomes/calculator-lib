@@ -174,6 +174,7 @@ This file describes steps to set up your local development environment.
 ```bash
 poetry add --dev black
 poetry add --dev coverage
+poetry add --dev httpx
 poetry add --dev isort
 poetry add --dev mypy
 poetry add --dev pytest-asyncio
@@ -226,7 +227,7 @@ environment to successfully run the following commands.
 
     ```bash
     # Format code
-    poetry run black src/ tests/
+    poetry run black --target-version py314 src/ tests/
 
     # Lint
     poetry run pylint src/

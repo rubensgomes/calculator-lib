@@ -35,13 +35,15 @@ that a `Claude Code` CLI session is started running on an underlying Linux
 
 ## Starting a Release
 
-- Refer to [release-plan.md](.claude/commands/release-plan.md) for the list of
+- Refer to [.claude/commands/release-plan.md](.claude/commands/release-plan.md) for the list of
   commands that are run during a release.
 
 - The release plan is generated/executed within `Claude Code`. You must start
   `Claude Code`, and run the following custom slash command:
 
     ```commandline
+    cd $(git rev-parse --show-toplevel) || exit
+    claude --debug --ide --model opus  --verbose
     # Claude Code edit mode command:
     /release-plan rubensgomes/<proj-name>
     ```

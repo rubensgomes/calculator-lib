@@ -1,17 +1,16 @@
 [project]
 name = "calculator-lib-rubens"
 keywords = ["math", "calculator", "utility"]
-version = "0.1.6"
+version = "0.2.0"
 description = "A python calculator library."
 authors = [
     {name = "Rubens Gomes",email = "rubens.s.gomes@gmail.com"}
 ]
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.12.0,<4.0.0"
+requires-python = ">=3.14.0,<4.0.0"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License"
+    "Programming Language :: Python :: 3"
 ]
 dependencies = [
 ]
@@ -25,7 +24,7 @@ Repository = "https://github.com/rubensgomes/calculator-lib/"
 packages = [{include = "calculator_lib", from = "src"}]
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=2.4.1,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.coverage.run]
@@ -38,20 +37,21 @@ fail_under = 90
 
 [dependency-groups]
 dev = [
-    "black (>=26.3.1,<27.0.0)",
-    "coverage (>=7.13.5,<8.0.0)",
-    "httpx (>=0.28.0,<1.0.0)",
+    "black (>=26.5.1,<27.0.0)",
+    "coverage (>=7.15.4,<8.0.0)",
+    "httpx (>=0.28.1,<1.0.0)",
     "isort (>=7.0.0,<8.0.0)",
-    "mypy (>=1.19.1,<2.0.0)",
-    "pylint (>=4.0.4,<5.0.0)",
-    "pytest (>=9.0.2,<10.0.0)",
+    "mypy (>=1.20.2,<2.0.0)",
+    "pylint (>=4.0.7,<5.0.0)",
+    "pytest (>=9.1.1,<10.0.0)",
     "pytest-cov (>=7.1.0,<8.0.0)",
-    "pytest-asyncio (>=1.3.0,<2.0.0)",
-    "types-pyyaml (>=6.0.12.20250915,<7.0.0.0)",
+    "pytest-asyncio (>=1.4.0,<2.0.0)",
+    "types-pyyaml (>=6.0.12,<7.0.0.0)",
 ]
 
 [tool.black]
 line-length = 80
+target-version = ["py314"]
 
 [tool.isort]
 line_length = 80

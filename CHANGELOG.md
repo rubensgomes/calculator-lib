@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-08-19
+
+### Changed
+
+- Updated `requires-python` from `>=3.12.0,<4.0.0` to `>=3.14.0,<4.0.0`
+- Updated build requirement from `poetry-core>=2.0.0` to `poetry-core>=2.4.1`
+- Updated dev dependency minimum versions in `pyproject.toml` (`black`, `coverage`,
+  `httpx`, `mypy`, `pylint`, `pytest`, `pytest-asyncio`)
+- Relaxed `types-pyyaml` constraint from `>=6.0.12.20250915` to `>=6.0.12`
+- Updated `poetry.lock` with latest dependency versions
+- Updated `SETUP.md` to run `black` with an explicit `--target-version py314`
+  and to list `httpx` among the dev dependencies
+- Updated `RELEASE.md` with the `claude` CLI invocation used to start a release
+  and corrected the `release-plan.md` link text
+- Updated `README.md` Python badge and requirements to 3.14+
+- Updated `llms.txt` build system reference to `poetry-core >= 2.4.1`
+- Updated `CLAUDE.md` to reflect Python >= 3.14 and `poetry-core >= 2.4.1`, plus
+  common commands, project structure, and tooling notes
+- Added `target-version = ["py314"]` to `[tool.black]` in `pyproject.toml` so
+  `black` no longer warns about an inferred Python 3.15 target
+
+### Removed
+
+- Removed the deprecated `License :: OSI Approved :: MIT License` classifier from
+  `pyproject.toml` (superseded by the PEP 639 `license = "MIT"` expression)
+
 ## [0.1.6] - 2026-04-05
 
 ### Changed
