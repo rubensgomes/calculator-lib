@@ -45,5 +45,26 @@ bump rather than a patch.
 - [x] 4. Run `poetry run pytest` and fix any issues
 - [x] 5. Run `export SOURCE_DATE_EPOCH=$(date +%s); poetry build -v` and fix any issues
 - [x] 6. Ensure `CHANGELOG.md` exists and update with current release changes
-- [ ] 7. Commit all changes, create version tag, push, and create GitHub release
+- [x] 7. Commit all changes, create version tag, push, and create GitHub release
 - [ ] 8. Run `poetry publish -v` to publish to PyPI
+
+## Outstanding
+
+Step 8 (`poetry publish -v`) is **blocked**: PyPI returned
+`HTTP 403 - Invalid or non-existent authentication information`.
+
+The environment has `PYPI_API_TOKEN` set, but Poetry does not read that
+variable. Retrying with `POETRY_PYPI_TOKEN_PYPI="$PYPI_API_TOKEN"` produced the
+same 403, so the token itself appears to be invalid, expired, or scoped to a
+different repository (e.g. TestPyPI).
+
+To finish the release, set a valid PyPI token and re-run the publish:
+
+```bash
+export POETRY_PYPI_TOKEN_PYPI="pypi-..."   # project-scoped or account token
+poetry publish -v
+```
+
+The `dist/` artifacts for 0.2.0 are already built and verified, so no rebuild is
+needed. Consider adding `POETRY_PYPI_TOKEN_PYPI` to the environment variables
+listed in `RELEASE.md`.
